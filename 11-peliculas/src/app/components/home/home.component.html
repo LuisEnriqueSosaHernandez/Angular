@@ -1,0 +1,13 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Peliculas APP</h1>
+      <p class="lead">Pruebas con API movieDB</p>
+    </div>
+  </div>
+
+  <div class="container">
+      <br>
+      <app-cuadro [peliculas]="cartelera| slice:0:6" titulo="Películas en cartelera"></app-cuadro>
+      <app-cuadro [peliculas]="populares| slice:0:6" titulo="Populares"></app-cuadro>
+      <app-cuadro [peliculas]="popularesNinos| slice:0:6" titulo="Populares niños"></app-cuadro>
+  </div>

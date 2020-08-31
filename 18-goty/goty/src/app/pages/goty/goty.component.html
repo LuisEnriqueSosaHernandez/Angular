@@ -1,0 +1,15 @@
+<h2>Votar por el mejor juego</h2>
+ <div class="row">
+     <div class="col">
+        <div class="card-columns">
+            <div class="card bg-dark" *ngFor="let juego of juegos">
+              <img [src]="juego.url" class="card-img-top" [alt]="juego.name">
+              <div class="card-body">
+                <h5 class="card-title">{{juego.name}}</h5>
+                <p class="card-text">Clic aqui para votar por el juego</p>
+                <button [disabled]="procesando" (click)="votarJuego(juego)" class="btn btn-block btn-outline-danger">Votar</button>
+              </div>
+            </div>
+        </div>
+     </div>
+ </div>
